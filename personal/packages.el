@@ -13,11 +13,12 @@
                               htmlize
                               magit
                               markdown-mode
-                              nyan-model
+                              nyan-mode
                               org
                               paredit
                               powerline
                               rvm
+                              rg
                               smex
                               smart-mode-line
                               solarized-theme
