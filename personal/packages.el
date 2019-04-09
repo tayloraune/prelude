@@ -66,3 +66,10 @@
 (setq rm-whitelist "monkey")
 (setq rm-blacklist nil)
 (sml/setup)
+
+(when (memq window-system '(mac ns x))
+  (setq exec-path-from-shell-variables
+        (append exec-path-from-shell-variables
+                '("environment" "test_environment"
+                  "USER" "WB_ROOT")))
+  (exec-path-from-shell-initialize))
